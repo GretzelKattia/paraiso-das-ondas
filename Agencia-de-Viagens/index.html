@@ -1,118 +1,306 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="webthemez">
     <title>Paraiso das Ondas</title>
-	<!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet"> 
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet"> 
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico"> 
-</head> 
+    <!--bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!---css link-->
+    <link rel="stylesheet" href="./style.css">
+    <!--boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!---google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Arima:wght@100..700&family=Courgette&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!---AOS-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<body id="home">
-    <header id="header">
-        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/Paraiso-das-Ondas/Logo.png" alt="logo"></a>
-                </div>
-				
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="#home">Home</a></li>  
-                        <li class="scroll"><a href="#services">Destinos</a></li>                   
-                    </ul>
-                </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
-    </header><!--/header-->
+</head>
+<body>
+    <!---Navbar----->
+    <section class="landing-section">
+    <nav class="navbar navbar-expand-lg" style="background-color: #FFF9EA;">
+        <div class="container-fluid ">
+          <a class="navbar-brand " href="#"><img width="200px" src="imagens/Logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item me-5">
+                <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-5" href="#about">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-5" href="#our-story">Nossa Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-5" href="#products">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-5" href="#gallery">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-5" href="#contact">Contato</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!---Home page contents-->
+      <section id="home" class="home-section">
+      <h1 class="text-success"><span style="color: rgb(255, 255, 255); border-bottom: 4px solid ;"><strong>Descubra o Paraíso</strong></span></h1>
+      <br>
+      
+      <p style="color: white;">Explore as praias mais deslumbrantes do mundo <br>Deixe-se levar pela beleza das praias mais incríveis do planeta. <br>De águas cristalinas a areias douradas, temos o destino perfeito para você.</p>
 
-    <section id="hero-banner">
-             <div class="banner-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                 
-                                    <h2>Encontre seu paraíso, descubra praias ao redor do <b>mundo!</b></h2>
-                                    <p>Encontre um lugar melhor para descansar  .</p>
-                                    <a class="btn btn-primary btn-lg" href="#">Start Now</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </section><!--/#main-slider-->
+      
+     <button class="btn btn-success p-2" type="submit">Destinos</button>
+    </section>
+    
+     <br><br><br><br><br><br><br><br><br><br><br>
+     <!---cards-->
+<div class="container">
+  <div class="row justify-content-start">
+     <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card1 bg-light">
+           <img src="imagens/card-img-1.png" class="card-img-top1" alt="no image">
+           <div class="card-body1">
+              <p class="card-text1" id="card-title1">Suporte</p>
+              <div class="card-description1">Nossa equipe de suporte dedicada está disponível 24 horas por dia, 7 dias por semana, para ajudar você com quaisquer dúvidas durante sua viagem.</div>
+           </div>
+        </div>
+     </div>
 
- <section id="services" >
-        <div class="container">
+     <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card1 bg-light">
+           <img src="Imagens/card-img-2.png" class="card-img-top1" alt="no image">
+           <div class="card-body1">
+              <p class="card-text1" id="card-title1">Garantia de Satisfação</p>
+              <div class="card-description1">Oferecemos uma garantia de satisfação para garantir que cada viagem seja uma experiência inesquecível e sem preocupações.</div>
+           </div>
+        </div>
+     </div>
 
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Nossos Destinos Tropicais</h2>
-                <p class="wow fadeInDown">Informações sobre os pacotes de viagens. Aqui estão exemplos para cada cartão:</p>
-            </div>
+     <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card1 bg-light">
+           <img src="Imagens/card-img-3.png" class="card-img-top1" alt="no image">
+           <div class="card-body1">
+              <p class="card-text1" id="card-title1">Reservas Rápidas</p>
+              <div class="card-description1">Faça suas reservas de forma rápida e segura, garantindo que você possa começar a planejar sua aventura sem demora.</div>
+           </div>
+        </div>
+     </div>
 
-            <div class="row">
-                <div class="features">
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-futbol-o"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Paraísos no Caribe</h4>
-                                <p>Descubra as praias de águas cristalinas e o charme do Caribe. Pacotes com tudo incluso e experiências únicas.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+     <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card1 bg-light">
+           <img src="Imagens/card-img-4.png" class="card-img-top1" alt="no image">
+           <div class="card-body1">
+              <p class="card-text1" id="card-title1">Padrões de Qualidade</p>
+              <div class="card-description1">Estabelecemos altos padrões de qualidade em nossos serviços, garantindo que cada viagem seja planejada com cuidado.</div>
+           </div>
+        </div>
+     </div>
+  </div>
+</div>
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-compass"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Maldivas de Sonho</h4>
-                                <p>Viva o luxo nas Maldivas, com pacotes personalizados incluindo mergulho e resorts de frente para o mar</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+  <br><br><br><br>
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-database"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Aventura em Fernando de Noronha</h4>
-                                <p>Explore o paraíso brasileiro com atividades como mergulho, trilhas e muito mais.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
-    <script src="js/mousescroll.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/custom-scripts.js"></script>
+<!-- About Section -->
+<section id="about"   class="about-section py-5">
+  <div class="container">
+      
+              <h2 class="text-success"><span style="color: rgb(255, 255, 255); border-bottom: 4px solid ;"><strong>Sobre Nós</strong></span></h2>
+              <p class="lead">
+               No Paraiso das Ondas, somos apaixonados por proporcionar experiências de viagem inesquecíveis para as praias mais deslumbrantes do mundo. Nosso compromisso com a excelência e a satisfação do cliente impulsiona tudo o que fazemos.
+               <br>
+               Fundada em [ano de fundação], nossa missão é oferecer os melhores pacotes de viagem, mantendo altos padrões de qualidade e sustentabilidade. Acreditamos em criar memórias duradouras enquanto cuidamos do meio ambiente e apoiamos as comunidades locais.
+               <br>
+               Junte-se a nós em nossa jornada para explorar paraísos tropicais e descubra o destino perfeito para sua próxima aventura à beira-mar!</p>
+          
+         
+              <img src="" class="img-fluid rounded" alt="">
+          
+      
+  </div>
+</section>
+
+
+
+  <!-- Our Story Section -->
+<section id="our-story" class="our-story-section py-5">
+  <div class="container">
+     <h2 class="text-center text-success mb-4">Nossa História</h2>
+     
+     <div class="row">
+        
+        <div data-aos="fade-left" class="col-md-6">
+           <img     src="imagens/photo-1499115715094-e58b465d8e3e.avif" alt="Image 1" class="img-fluid rounded">
+        </div>
+       
+        <div class="col-md-6 d-flex align-items-center">
+           <div>
+              <h3 class="text-success">Como Começamos?</h3>
+              <p>Tudo começou com uma visão: conectar pessoas às praias mais deslumbrantes do mundo. Fundada em 2015, nossa agência nasceu da paixão por viagens e pelo desejo de oferecer experiências únicas e memoráveis. Desde o início, nosso objetivo tem sido proporcionar aventuras à beira-mar que inspirem e rejuvenescam.
+
+               Ao longo dos anos, crescemos e nos tornamos especialistas em destinos tropicais, sempre mantendo nosso compromisso com a qualidade, o atendimento personalizado e a sustentabilidade. Cada viagem que planejamos é uma oportunidade de criar histórias inesquecíveis.</p>
+           </div>
+        </div>
+     </div>
+
+     <div class="row mt-5">
+    
+        <div  data-aos="fade-left" class="col-md-6 order-md-2">
+           <img src="imagens/bela-praia-tropical-mar-e-oceano-com-palmeira-de-coco-na-hora-do-nascer-do-sol_74190-1070.avif" alt="Image 2" class="img-fluid rounded">
+        </div>
+        
+        <div class="col-md-6 d-flex align-items-center order-md-1">
+           <div>
+              <h3 class="text-success">Nosso Compromisso</h3>
+              <p>No Paraiso das Ondas, estamos dedicados a oferecer experiências de viagem excepcionais, enquanto apoiamos práticas sustentáveis e o turismo responsável. Acreditamos que viajar é mais do que apenas visitar novos lugares; é sobre criar conexões, explorar culturas e preservar a beleza natural do nosso planeta.
+
+               Trabalhamos em parceria com comunidades locais e resorts eco-friendly para garantir que suas férias sejam não apenas incríveis, mas também conscientes. Cada viagem que planejamos reflete nosso compromisso com a excelência e o respeito pelo meio ambiente.</p>
+           </div>
+        </div>
+     </div>
+  </div>
+</section>
+
+
+<br><br><br>
+<!-- Product Section -->
+<section id="products" class="products-section py-5">
+  <div class="container">
+     <h2 class="text-center text-success mb-4">Nossos Pacotes</h2>
+     <div class="row gy-4">
+        <!-- Product 1 -->
+        <div class="col-12 col-sm-6 col-md-4">
+           <div class="card h-100">
+              <img src="imagens/Produto1.jpeg" class="card-img-top" alt="Product 1" >
+              <div class="card-body text-center">
+                 <h5 class="card-title">Praias Tropicais</h5>
+                 <p class="card-text">Descubra as praias mais deslumbrantes do mundo, com águas cristalinas e areias douradas.</p>
+              </div>
+              <div class="card-footer text-center">
+                 <h5 class="text-success mb-0">A partir de R$ 2.500</h5>
+              </div>
+           </div>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="col-12 col-sm-6 col-md-4">
+           <div class="card h-100">
+              <img src="imagens/Produto2.jpeg" class="card-img-top" alt="Product 2">
+              <div class="card-body text-center">
+                 <h5 class="card-title">Ilhas Paradisíacas</h5>
+                 <p class="card-text">Explore ilhas exclusivas e resorts luxuosos em destinos como Maldivas, Seychelles e Bora Bora.</p>
+              </div>
+              <div class="card-footer text-center">
+                 <h5 class="text-success mb-0">A partir de R$ 3.800</h5>
+              </div>
+           </div>
+        </div>
+        
+        <!-- Product 3 -->
+        <div class="col-12 col-sm-6 col-md-4">
+           <div class="card h-100">
+              <img src="imagens/Produto3.jpg" class="card-img-top" alt="Product 3">
+              <div class="card-body text-center">
+                 <h5 class="card-title">Aventuras à Beira-Mar</h5>
+                 <p class="card-text">Surfe, mergulho e outras atividades emocionantes em praias ao redor do mundo.</p>
+                 
+              </div>
+              <div class="card-footer text-center">
+                 <h5 class="text-success mb-0">A partir de R$ 1.900</h5>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</section>
+<!---contact-->
+
+<div id="contact"    class="contact-section text-center py-5">
+  <h2 class="mb-4">Fale Conosco</h2>
+  <p class="mb-5">Adoraríamos ouvir de você! Se você tem dúvidas, precisa de ajuda para planejar sua viagem ou deseja mais informações sobre nossos pacotes, preencha o formulário abaixo.</p>
+  
+  <form class="contact-form">
+      <div class="form-group">
+          <input type="text" name="name" class="form-control" placeholder="Seu Nome" required>
+      </div>
+      <div class="form-group">
+          <input type="email" name="email" class="form-control" placeholder="Seu E-mail" required>
+      </div>
+      <div class="form-group">
+          <textarea name="message" class="form-control" placeholder="Sua Mensagem" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+  </form>
+</div>
+
+
+
+<!---footer-->
+<footer class="footer-section">
+  <div class="container text-center text-md-left py-4">
+      <div class="row">
+          
+          <div class="col-md-4 mb-4">
+              <h5>Sobre Nós</h5>
+              <p>Estamos dedicados a oferecer experiências de viagem inesquecíveis para as praias mais deslumbrantes do mundo. Agradecemos por visitar nosso site e esperamos ajudá-lo a planejar a viagem dos seus sonhos!
+              </p>
+          </div>
+
+          
+          <div class="col-md-4 mb-4">
+              <h5>Links Rápidos</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#home">Inicio</a></li>
+                  <li><a href="#about">Sobre Nós</a></li>
+                  <li><a href="#products">Destinos</a></li>
+                  <li><a href="#contact">Contato</a></li>
+              </ul>
+          </div>
+
+          
+          <div class="col-md-4 mb-4">
+              <h5>Siga-nos</h5>
+              <div class="social-icons">
+                  <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+
+      <hr class="my-4">
+
+      
+      <div class="text-center">
+          <p>&copy; 2025 Paraiso das Ondas. Todos os direitos reservados para Gretzel Laura.</p>
+      </div>
+  </div>
+</footer> 
+
+
+    
+
 </body>
+<!--script----->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!--AOS Script-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
 </html>
